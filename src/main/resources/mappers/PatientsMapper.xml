@@ -11,7 +11,7 @@
     </insert>
 
     <!--  修改实体类的包名 -->
-    <select id="getPatient" resultType="com.hors.bean.Maps">
+    <select id="getPatient" resultType="com.hors.beans.Patients">
         select uname,upass,name,sex,age,tel from patients
     </select>
 </mapper>
