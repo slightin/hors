@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!--  修改mapper接口的包名 -->
+<mapper namespace="com.hors.mappers.PatientsMapper">
+
+    <insert id="insertPatient">
+        INSERT INTO `hors`.`patients` (`uname`, `upass`, `name`,`sex`,`age`,`tel`)
+        VALUES (#{uname},#{upass},#{name},#{sex},
+                #{age},#{tel});
+    </insert>
+
+    <!--  修改实体类的包名 -->
+    <select id="getPatient" resultType="com.hors.bean.Maps">
+        select uname,upass,name,sex,age,tel from patients
+    </select>
+</mapper>
