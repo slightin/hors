@@ -15,9 +15,9 @@ public class PatientsServiceImpl implements PatientsService {
     @Override
     public List<Patients> getPatients(){
         List<Patients> patientsinfo = patientsMapper.getPatients();
-        for (Patients patients : patientsinfo) {
-
-        }
+//        for (Patients patients : patientsinfo) {
+//
+//        }
         return patientsinfo;
     }
 
